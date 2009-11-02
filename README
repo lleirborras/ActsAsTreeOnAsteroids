@@ -1,18 +1,17 @@
 ActsAsAudited
 =============
 
-Simulates a deleted model using the deleted_at attribute.
-Model must have a deleted_at attribute or similar.
+An ActsAsTree plugin adaption with many news
 
 Configuration options
 =====================
-{:deleted_at => "deleted_at"}
+{:foreign_key => "parent_id", :position => "position", :counter_cache => nil }
 
 Example
 =======
 
 class Node < ActiveRecord::Base                                                 
-  acts_as_deleted
+  acts_as_tree_on_asteroids
 end
 
 
