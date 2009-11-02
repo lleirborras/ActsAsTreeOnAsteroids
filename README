@@ -1,0 +1,20 @@
+ActsAsAudited
+=============
+
+Simulates a deleted model using the deleted_at attribute.
+Model must have a deleted_at attribute or similar.
+
+Configuration options
+=====================
+{:deleted_at => "deleted_at"}
+
+Example
+=======
+
+class Node < ActiveRecord::Base                                                 
+  acts_as_deleted
+end
+
+
+
+Copyright (c) 2009 [Lleïr Borràs i Metje <memtest AT gmail DOT com>], released under the MIT license
